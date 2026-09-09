@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://isaiasdeleon.github.io/invitaciones-premium/sitemap.xml
