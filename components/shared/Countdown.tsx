@@ -34,11 +34,12 @@ const labels = ['Días', 'Horas', 'Minutos', 'Segundos'];
 
 export function Countdown({ startsAt, timeZone }: { startsAt: string; timeZone: string }) {
   const getValue = useMemo(() => () => calculate(startsAt, timeZone), [startsAt, timeZone]);
-  const [value, setValue] = useState<CountdownValue>(getValue);
+  const [value, setValue] = useState<CountdownValue>(() => empty(startsAt ? 'upcoming' : 'unset'));
 
   useEffect(() => {
+    const firstUpdate = window.setTimeout(() => setValue(getValue()), 0);
     const timer = window.setInterval(() => setValue(getValue()), 1_000);
-    return () => window.clearInterval(timer);
+    return () => { window.clearTimeout(firstUpdate); window.clearInterval(timer); };
   }, [getValue]);
 
   if (value.status !== 'upcoming') {
