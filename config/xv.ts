@@ -6,7 +6,7 @@ export const XV_CONFIG: InvitationConfig = {
   id: 'xv-sofia-isabella', variant: 'xv',
   opening: { eyebrow: 'Una noche para recordar', title: 'Mi historia está a punto de florecer.', note: 'Abre la invitación y acompáñame a soñar.' },
   hero: {
-    image: image('quince-01-hero-vestido-escalera', 'Joven con vestido de gala champagne en una gran escalinata', 1600, 792),
+    image: image('quince-08-night-portrait', 'Joven con vestido de gala brillante bajo las luces nocturnas de la ciudad', 1800, 2696),
     eyebrow: 'Mis XV', title: ['Sofía', 'Isabella'], displayName: 'Sofía Isabella', date: '06 · Marzo · 2027',
     quote: 'Hay momentos que brillan una vez y permanecen para siempre.', monogram: 'XV',
   },
@@ -30,7 +30,7 @@ export const XV_CONFIG: InvitationConfig = {
     { time: '21:00', title: 'Cena' }, { time: '22:15', title: 'Fiesta', detail: 'Que comience la magia' },
   ],
   gallery: [
-    image('quince-01-hero-vestido-escalera', 'Retrato editorial con vestido de gala champagne', 1600, 792),
+    image('quince-08-night-portrait', 'Retrato nocturno con vestido de gala brillante', 1800, 2696),
     image('quince-02-palacio-jardin', 'Jardín formal frente a un palacio', 1600, 2400),
     image('quince-03-invernadero-escalera', 'Escalera romántica rodeada de naturaleza', 1600, 2400),
     image('quince-04-flores-luces-colgantes', 'Arreglo de flores rosas con pequeñas luces', 1600, 2246),

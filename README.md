@@ -3,7 +3,7 @@
 Catálogo profesional de invitaciones digitales creado para BadgerSoftTech. Incluye un showroom general y tres demostraciones completas con direcciones visuales independientes:
 
 - **Boda · Editorial Romance:** marfil, verde profundo y detalles champagne.
-- **XV años · Modern Princess:** rosa empolvado, ciruela y luz de gala.
+- **XV años · Enchanted Night:** azul medianoche, violeta, destellos y puesta en escena cinematográfica.
 - **Presentación · Soft Heirloom:** crema, azul grisáceo y lenguaje familiar.
 
 ## Stack
@@ -41,8 +41,8 @@ app/
   xv/page.tsx              Demo de XV años
   presentacion/page.tsx    Demo infantil
 components/
-  invitation/              Experiencia completa
-  shared/                  Contador, galería, música, calendario
+  invitation/              Control funcional y tres composiciones independientes
+  shared/                  Contador, galería portal, música, calendario
 config/
   boda.ts
   xv.ts
@@ -97,7 +97,7 @@ Cada elemento de `locations` acepta `kind`, `name`, `time`, `address`, `mapsUrl`
 1. Duplica el archivo de configuración más cercano al estilo deseado.
 2. Cambia su `id`, textos y datos del evento.
 3. Copia las fotos y música autorizadas a carpetas propias dentro de `public/assets/`.
-4. Duplica una ruta en `app/` y pásale la nueva configuración a `InvitationExperience`.
+4. Crea una composición visual propia en `components/invitation/` y conéctala desde `InvitationExperience`.
 5. Añade la ruta a `src/main.tsx` y `vite.pages.config.ts` para GitHub Pages.
 6. Actualiza los metadatos de título, descripción e imagen social.
 7. Ejecuta lint y ambas compilaciones antes de publicar.
