@@ -24,9 +24,9 @@ export default function Home() {
 
       <header className="catalog-hero" id="inicio">
         <div className="catalog-hero-collage" aria-hidden="true">
-          <figure className="collage-main"><img src={asset('assets/wedding/boda-01-hero-pareja-atardecer.webp')} alt="" /></figure>
-          <figure className="collage-xv"><img src={asset('assets/xv/quince-08-night-portrait.webp')} alt="" /></figure>
-          <figure className="collage-family"><img src={asset('assets/presentation/presentacion-07-primeros-pasos-familia.webp')} alt="" /></figure>
+          <figure className="collage-main"><img src={asset('assets/wedding/boda-08-pareja-bosque-editorial.webp')} alt="" width="1600" height="2400" /></figure>
+          <figure className="collage-xv"><img src={asset('assets/xv/quince-08-night-portrait.webp')} alt="" width="1800" height="2696" /></figure>
+          <figure className="collage-family"><img src={asset('assets/presentation/presentacion-07-primeros-pasos-familia.webp')} alt="" width="1600" height="2400" /></figure>
         </div>
         <div className="catalog-hero-copy">
           <p>Invitaciones digitales de autor</p>
@@ -39,37 +39,37 @@ export default function Home() {
       <section className="catalog-statement" id="coleccion"><span>El primer recuerdo</span><h2>No diseñamos una página para tu evento. Diseñamos la forma en que comienza.</h2><p>Tres direcciones artísticas, una experiencia impecable en el teléfono y cada detalle adaptado a tu celebración.</p></section>
 
       <section className="showcase showcase-wedding">
-        <figure className="showcase-wedding-main"><img src={asset('assets/wedding/boda-06-primer-baile.webp')} alt="Pareja durante su primer baile" loading="lazy" /></figure>
+        <figure className="showcase-wedding-main"><img src={asset('assets/wedding/boda-08-pareja-bosque-editorial.webp')} alt="Pareja de novios en un jardín de luz natural" width="1600" height="2400" loading="lazy" /></figure>
         <div className="showcase-index"><span>01</span><p>Boda · Editorial Romance</p></div>
         <div className="showcase-copy"><p>Luxury wedding editorial</p><h2>Valeria<br /><i>&amp;</i> Sebastián</h2><span>Fotografía cinematográfica, elegancia atemporal y un ritmo que respira como una revista de autor.</span><div className="showcase-includes">Galería <i>·</i> Música <i>·</i> RSVP <i>·</i> Ubicaciones</div><a href="./boda">Explorar invitación <ArrowUpRight aria-hidden="true" /></a></div>
-        <figure className="showcase-wedding-detail"><img src={asset('assets/wedding/boda-03-anillos-lujo.webp')} alt="Anillos de boda en un estuche elegante" loading="lazy" /></figure>
+        <figure className="showcase-wedding-detail"><img src={asset('assets/wedding/boda-10-detalle-vestido-anillo.webp')} alt="Detalle del vestido, el ramo y los anillos" width="1400" height="2100" loading="lazy" /></figure>
       </section>
 
       <section className="showcase showcase-xv">
         <div className="showcase-xv-glow" aria-hidden="true" />
         <div className="showcase-index"><span>02</span><p>XV años · Enchanted Night</p></div>
         <div className="showcase-copy"><p>Cinematic after dark</p><h2>Sofía<br /><em>Isabella</em></h2><span>Una noche profunda y luminosa: retratos, destellos y movimiento sutil para una celebración que no se parece a ninguna otra.</span><div className="showcase-includes">Cuenta regresiva <i>·</i> Itinerario <i>·</i> Dress code</div><a href="./xv">Explorar invitación <ArrowUpRight aria-hidden="true" /></a></div>
-        <div className="showcase-xv-photos"><figure><img src={asset('assets/xv/quince-08-night-portrait.webp')} alt="Joven con vestido de gala bajo las luces de la ciudad" loading="lazy" /></figure><figure><img src={asset('assets/xv/quince-04-flores-luces-colgantes.webp')} alt="Flores rosas y luces cálidas" loading="lazy" /></figure><span aria-hidden="true">XV</span></div>
+        <div className="showcase-xv-photos"><figure><img src={asset('assets/xv/quince-08-night-portrait.webp')} alt="Joven con vestido de gala bajo las luces de la ciudad" width="1800" height="2696" loading="lazy" /></figure><figure><img src={asset('assets/xv/quince-04-flores-luces-colgantes.webp')} alt="Flores rosas y luces cálidas" width="1600" height="2246" loading="lazy" /></figure><span aria-hidden="true">XV</span></div>
       </section>
 
       <section className="showcase showcase-presentation">
-        <figure className="showcase-presentation-bg"><img src={asset('assets/presentation/presentacion-07-primeros-pasos-familia.webp')} alt="Familia acompañando los primeros pasos de un bebé" loading="lazy" /></figure>
+        <figure className="showcase-presentation-bg"><img src={asset('assets/presentation/presentacion-07-primeros-pasos-familia.webp')} alt="Familia acompañando los primeros pasos de un bebé" width="1600" height="2400" loading="lazy" /></figure>
         <div className="showcase-index"><span>03</span><p>Presentación · Soft Heirloom</p></div>
         <div className="showcase-copy"><p>Un álbum familiar</p><h2>Mateo</h2><span>Papel, luz natural y pequeños gestos. Una invitación íntima con la calidez de un recuerdo que se pasa de generación en generación.</span><div className="showcase-includes">Álbum <i>·</i> Calendario <i>·</i> Familia <i>·</i> RSVP</div><a href="./presentacion">Explorar invitación <ArrowUpRight aria-hidden="true" /></a></div>
-        <figure className="showcase-presentation-card"><span>con mucha alegría</span><img src={asset('assets/presentation/presentacion-01-manos-familia-bebe.webp')} alt="Manos de una familia sosteniendo la mano de un bebé" loading="lazy" /><small>La presentación de Mateo</small></figure>
+        <figure className="showcase-presentation-card"><span>con mucha alegría</span><img src={asset('assets/presentation/presentacion-01-manos-familia-bebe.webp')} alt="Manos de una familia sosteniendo la mano de un bebé" width="1600" height="1063" loading="lazy" /><small>La presentación de Mateo</small></figure>
       </section>
 
       <section className="catalog-experience" id="experiencia">
         <header><p>Diseñada para sentirse</p><h2>Una invitación.<br />Toda la <em>experiencia.</em></h2></header>
         <div className="experience-campaign">
-          <div className="phone-stage"><PhonePreview variant="wedding" image={asset('assets/wedding/boda-01-hero-pareja-atardecer.webp')} eyebrow="Nuestra boda" name="V & S" /><PhonePreview variant="xv" image={asset('assets/xv/quince-08-night-portrait.webp')} eyebrow="Mis XV" name="Sofía" /></div>
+          <div className="phone-stage"><PhonePreview variant="wedding" image={asset('assets/wedding/boda-08-pareja-bosque-editorial.webp')} eyebrow="Nuestra boda" name="V & S" /><PhonePreview variant="xv" image={asset('assets/xv/quince-08-night-portrait.webp')} eyebrow="Mis XV" name="Sofía" /></div>
           <div className="experience-notes"><p>Tu invitación vive donde están tus invitados: en su teléfono.</p><div><span><MapPin aria-hidden="true" />Google Maps</span><span><CalendarDays aria-hidden="true" />Calendario</span><span><MessageCircle aria-hidden="true" />WhatsApp</span><span><Sparkles aria-hidden="true" />Personalización</span></div></div>
         </div>
         <div className="experience-features">{features.map(([index, title, body, Icon]) => <article key={index}><span>{index}</span><Icon aria-hidden="true" /><h3>{title}</h3><p>{body}</p></article>)}</div>
       </section>
 
       <section className="catalog-final-cta">
-        <img src={asset('assets/wedding/boda-05-mesa-velas-verde.webp')} alt="Mesa de celebración iluminada con velas" loading="lazy" />
+        <img src={asset('assets/wedding/boda-12-recepcion-marfil.webp')} alt="Mesa de celebración en tonos marfil iluminada con velas" width="2000" height="1334" loading="lazy" />
         <div><p>Tu evento.</p><p>Tu historia.</p><h2>Tu invitación.</h2><span>Hagamos que se sienta especial desde el primer mensaje.</span><nav><a href={whatsapp} target="_blank" rel="noreferrer">Crear mi invitación <ArrowUpRight aria-hidden="true" /></a><a href={whatsapp} target="_blank" rel="noreferrer"><MessageCircle aria-hidden="true" /> Hablar por WhatsApp</a></nav></div>
       </section>
 

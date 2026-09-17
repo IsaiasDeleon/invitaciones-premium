@@ -1,4 +1,4 @@
-import { ArrowDown, ArrowLeft, CalendarDays, Gift, Heart, MapPin, Navigation, Send } from 'lucide-react';
+import { ArrowDown, ArrowLeft, CalendarDays, MapPin, Navigation, Send } from 'lucide-react';
 import { CalendarButtons } from '@/components/shared/CalendarButtons';
 import { Countdown } from '@/components/shared/Countdown';
 import { Gallery } from '@/components/shared/Gallery';
@@ -15,6 +15,8 @@ export function WeddingInvitation({ config, whatsappUrl }: { config: InvitationC
 
       <header className="wedding-hero">
         <div className="wedding-hero-photo"><img src={config.hero.image.src} alt={config.hero.image.alt} width={config.hero.image.width} height={config.hero.image.height} /></div>
+        <div className="wedding-hero-frame" aria-hidden="true" />
+        <div className="wedding-hero-monogram" aria-hidden="true"><span>V</span><i /><span>S</span></div>
         <div className="wedding-hero-panel">
           <p>{config.hero.eyebrow}</p>
           <h1><span>{config.hero.title[0]}</span><i>&amp;</i><span>{config.hero.title[2]}</span></h1>
@@ -25,25 +27,30 @@ export function WeddingInvitation({ config, whatsappUrl }: { config: InvitationC
       </header>
 
       <section className="wedding-story" id="historia">
-        <div className="wedding-story-number" aria-hidden="true">I</div>
+        <div className="wedding-story-number" aria-hidden="true">01</div>
         <div className="wedding-story-copy" data-reveal>
           <p>{config.introduction.kicker}</p><h2>{config.introduction.title}</h2><div className="wedding-rule" /><p>{config.introduction.body}</p>
         </div>
-        <figure className="wedding-story-photo" data-reveal>
+        <div className="wedding-story-visual" data-reveal>
+          <figure className="wedding-story-photo">
           <img src={config.introduction.image.src} alt={config.introduction.image.alt} width={config.introduction.image.width} height={config.introduction.image.height} loading="lazy" />
           <figcaption>V &amp; S · Una historia para siempre</figcaption>
-        </figure>
+          </figure>
+          <figure className="wedding-story-detail">
+            <img src={config.gallery[2].src} alt={config.gallery[2].alt} width={config.gallery[2].width} height={config.gallery[2].height} loading="lazy" />
+          </figure>
+        </div>
       </section>
 
       <section className="wedding-families">
         <div className="wedding-section-mark" data-reveal><span>Con la bendición de</span><strong>Nuestras familias</strong></div>
         <div className="wedding-family-names">
-          {config.hosts.groups.map((group) => <article key={group.role} data-reveal><Heart aria-hidden="true" /><p>{group.role}</p>{group.names.map((name) => <h3 key={name}>{name}</h3>)}</article>)}
+          {config.hosts.groups.map((group) => <article key={group.role} data-reveal><i aria-hidden="true" /><p>{group.role}</p>{group.names.map((name) => <h3 key={name}>{name}</h3>)}</article>)}
         </div>
       </section>
 
       <section className="wedding-date" id="fecha">
-        <div className="wedding-date-intro" data-reveal><p>Save the date</p><h2>Veintidós<br />de mayo</h2><span>Dos mil veintisiete</span></div>
+        <div className="wedding-date-intro" data-reveal><p>Save the date</p><div className="wedding-date-number"><span>22</span><div><h2>Mayo</h2><time>2027</time></div></div><blockquote>Una fecha para guardar.<br />Una historia para celebrar.</blockquote></div>
         <div className="wedding-date-tools" data-reveal>
           <time>{config.hero.date}</time>
           <Countdown startsAt={config.event.startsAt} timeZone={config.event.timeZone} />
@@ -55,8 +62,8 @@ export function WeddingInvitation({ config, whatsappUrl }: { config: InvitationC
         <header data-reveal><p>II · El lugar</p><h2>Dos escenarios.<br /><em>Una sola promesa.</em></h2></header>
         <div className="wedding-place-list">
           {config.locations.map((location, index) => <article key={location.kind} className={`wedding-place place-${index + 1}`} data-reveal>
-            <img src={location.image.src} alt={location.image.alt} width={location.image.width} height={location.image.height} loading="lazy" />
-            <div><span>0{index + 1}</span><p>{location.kind}</p><h3>{location.name}</h3><time>{location.time}</time><address>{location.address}</address>
+            <figure><img src={location.image.src} alt={location.image.alt} width={location.image.width} height={location.image.height} loading="lazy" /></figure>
+            <div><span>0{index + 1}</span><p>{index === 0 ? 'La ceremonia' : 'La celebración'}</p><h3>{location.name}</h3><time>{location.time}</time><address>{location.address}</address>
               <nav><a href={location.mapsUrl} target="_blank" rel="noreferrer"><MapPin aria-hidden="true" /> Ver ubicación</a><a href={location.mapsUrl} target="_blank" rel="noreferrer">Cómo llegar <Navigation aria-hidden="true" /></a></nav>
             </div>
           </article>)}
@@ -74,18 +81,18 @@ export function WeddingInvitation({ config, whatsappUrl }: { config: InvitationC
       </section>
 
       <section className="wedding-details">
-        <article className="wedding-dress" data-reveal><span>V · Dress code</span><h2>{config.dressCode.title}</h2><p>{config.dressCode.description}</p></article>
-        {config.gifts.active && <article className="wedding-gifts" data-reveal><Gift aria-hidden="true" /><span>Un detalle opcional</span><h2>Mesa de regalos</h2><p>{config.gifts.intro}</p><div>{config.gifts.options.map((option) => <p key={option.name}><strong>{option.name}</strong><small>{option.detail}</small></p>)}</div></article>}
+        <article className="wedding-dress" data-reveal><span>V · Dress code</span><h2>Formal</h2><strong>Black tie optional</strong><div className="wedding-palette" aria-label="Paleta sugerida: negro, verde profundo, arena y gris"><i /><i /><i /><i /></div><p>{config.dressCode.description}</p></article>
+        {config.gifts.active && <article className="wedding-gifts" data-reveal><span>Un detalle opcional</span><h2>Mesa de regalos</h2><p>{config.gifts.intro}</p><div>{config.gifts.options.map((option) => <p key={option.name}><strong>{option.name}</strong><small>{option.detail}</small></p>)}</div></article>}
       </section>
 
       <section className="wedding-rsvp" id="confirmar">
-        <img src={config.locations[1].image.src} alt="" aria-hidden="true" loading="lazy" />
+        <img src={config.gallery[5].src} alt="" aria-hidden="true" loading="lazy" />
         <div className="wedding-rsvp-card" data-reveal><CalendarDays aria-hidden="true" /><p>Nos encantará contar contigo</p><h2>¿Celebramos<br /><em>juntos?</em></h2><span>Confirma antes del {config.rsvp.deadline}</span><a href={whatsappUrl} target="_blank" rel="noreferrer">Confirmar asistencia <Send aria-hidden="true" /></a></div>
       </section>
 
       <footer className="wedding-closing">
         <img src={config.closing.image.src} alt={config.closing.image.alt} width={config.closing.image.width} height={config.closing.image.height} loading="lazy" />
-        <div data-reveal><p>{config.closing.line}</p><strong>{config.closing.signature}</strong></div>
+        <div data-reveal><span aria-hidden="true">V · S</span><p>{config.closing.line}</p><strong>{config.closing.signature}</strong><time>{config.hero.date}</time></div>
         <span>Demo · BadgerSoftTech</span>
       </footer>
     </div>

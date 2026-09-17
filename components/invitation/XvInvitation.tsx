@@ -71,7 +71,7 @@ export function XvInvitation({ config, whatsappUrl }: { config: InvitationConfig
         <CalendarDays aria-hidden="true" /><p>Guarda una estrella para esta noche</p><h2>Quiero<br />celebrar <em>contigo</em></h2><span>Confirma antes del {config.rsvp.deadline}</span><a href={whatsappUrl} target="_blank" rel="noreferrer">Confirmar asistencia <Send aria-hidden="true" /></a>
       </section>
 
-      <footer className="xv-closing"><img src={config.closing.image.src} alt={config.closing.image.alt} width={config.closing.image.width} height={config.closing.image.height} loading="lazy" /><div data-reveal><p>{config.closing.line}</p><strong>{config.closing.signature}</strong></div><span>Demo · BadgerSoftTech</span></footer>
+      <footer className="xv-closing"><img src={config.closing.image.src} alt={config.closing.image.alt} width={config.closing.image.width} height={config.closing.image.height} loading="lazy" /><div data-reveal><i aria-hidden="true">XV</i><p>{config.closing.line}</p><strong>{config.closing.signature}</strong><time>{config.hero.date}</time></div><span>Demo · BadgerSoftTech</span></footer>
     </div>
   );
 }

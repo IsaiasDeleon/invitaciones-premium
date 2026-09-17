@@ -12,13 +12,13 @@ export const metadata: Metadata = {
     description: 'Descubre tres experiencias digitales creadas para celebrar con intención.',
     type: 'website',
     locale: 'es_MX',
-    images: ['/assets/wedding/boda-01-hero-pareja-atardecer.webp'],
+    images: ['/assets/wedding/boda-08-pareja-bosque-editorial.webp'],
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Invitaciones que se sienten antes de vivirse',
     description: 'Invitaciones digitales de autor por BadgerSoftTech.',
-    images: ['/assets/wedding/boda-01-hero-pareja-atardecer.webp'],
+    images: ['/assets/wedding/boda-08-pareja-bosque-editorial.webp'],
   },
   icons: { icon: '/favicon.svg' },
 };

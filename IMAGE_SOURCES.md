@@ -6,13 +6,13 @@ Todas las fotografías se descargaron desde Unsplash, se convirtieron a WebP y s
 
 | Archivo | Autor | Fuente |
 | --- | --- | --- |
-| `boda-01-hero-pareja-atardecer.webp` | Brianna Parks | [Unsplash](https://unsplash.com/photos/0od64wNWZgk) |
 | `boda-02-manos-pareja.webp` | Tai’s Captures | [Unsplash](https://unsplash.com/photos/_s5pZQrBZOs) |
 | `boda-03-anillos-lujo.webp` | Micah & Sammie Chaffin | [Unsplash](https://unsplash.com/photos/J2I3_ox-np0) |
-| `boda-04-jardin-ceremonia.webp` | Malia Moore | [Unsplash](https://unsplash.com/photos/nyQi_13Zl3A) |
-| `boda-05-mesa-velas-verde.webp` | Jennifer Kalenberg | [Unsplash](https://unsplash.com/photos/ROOE-zHpZYU) |
-| `boda-06-primer-baile.webp` | Sarah Noltner | [Unsplash](https://unsplash.com/photos/q5FNF6EEE30) |
-| `boda-07-altar-pampas.webp` | Jonathan Borba | [Unsplash](https://unsplash.com/photos/0S948h1Eotw) |
+| `boda-08-pareja-bosque-editorial.webp` | Omar Lopez | [Unsplash](https://unsplash.com/photos/FacxP0W20Xs) |
+| `boda-09-villa-jardines.webp` | Soham Banerjee | [Unsplash](https://unsplash.com/photos/vW4Jm30VPQ0) |
+| `boda-10-detalle-vestido-anillo.webp` | Brooke Balentine | [Unsplash](https://unsplash.com/photos/nhepjDz9dIo) |
+| `boda-11-pareja-jardin-cierre.webp` | Marina Abrosimova | [Unsplash](https://unsplash.com/photos/PgKb34u7x_4) |
+| `boda-12-recepcion-marfil.webp` | Thomas Beaman | [Unsplash](https://unsplash.com/photos/3NLJXvQfdc0) |
 
 ## XV años
 
