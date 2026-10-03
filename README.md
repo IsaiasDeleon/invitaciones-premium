@@ -1,9 +1,10 @@
 # Invitaciones Premium
 
-Catálogo profesional de invitaciones digitales creado para BadgerSoftTech. Incluye un showroom general y tres demostraciones completas con direcciones visuales independientes:
+Catálogo profesional de invitaciones digitales creado para BadgerSoftTech. Incluye un showroom general y cuatro demostraciones completas con direcciones visuales independientes:
 
 - **Boda · Editorial Romance:** marfil, verde profundo y detalles champagne.
 - **XV años · Enchanted Night:** azul medianoche, violeta, destellos y puesta en escena cinematográfica.
+- **Esmeralda · XV años:** verde bosque, marfil, retratos editoriales y un itinerario alternado para Corina Esmeralda.
 - **Presentación · Soft Heirloom:** crema, azul grisáceo y lenguaje familiar.
 
 ## Stack
@@ -31,6 +32,17 @@ npm run build:pages
 
 - `npm run build` crea la versión para Sites.
 - `npm run build:pages` crea `pages-dist/` con rutas estáticas para `/`, `/boda`, `/xv` y `/presentacion`.
+
+## Esmeralda — XV Años
+
+- **Festejada:** Corina Esmeralda
+- **Fecha:** 31 de octubre de 2026
+- **Paleta:** `#14463c` · `#009473`
+- **Demostración:** [Abrir invitación de Corina Esmeralda](https://isaiasdeleon.github.io/invitaciones-premium/esmeralda/)
+- **Galería:** hasta cinco imágenes editoriales de inspiración, reemplazables en `config/esmeralda.ts`.
+- **Itinerario:** los horarios no confirmados se mantienen vacíos; solo la ceremonia muestra las 2:00 PM.
+
+La invitación vive en `/esmeralda` y no modifica la composición de las otras plantillas. Su configuración de fotos, evento, mapas, música y WhatsApp se concentra en `config/esmeralda.ts`.
 
 ## Estructura principal
 

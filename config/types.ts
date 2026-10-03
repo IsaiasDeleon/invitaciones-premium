@@ -1,4 +1,4 @@
-export type InvitationVariant = 'wedding' | 'xv' | 'presentation';
+export type InvitationVariant = 'wedding' | 'xv' | 'presentation' | 'esmeralda';
 
 export type GalleryImage = {
   src: string;

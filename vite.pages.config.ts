@@ -11,6 +11,7 @@ const pages = [
   { route: '', title: 'Invitaciones Premium · BadgerSoftTech', description: 'Invitaciones digitales de autor para bodas, XV años y celebraciones familiares.', image: 'assets/wedding/boda-08-pareja-bosque-editorial.webp', theme: '#171712' },
   { route: 'boda', title: 'Valeria & Sebastián · Boda', description: 'Demo Editorial Romance: una invitación digital de boda elegante y cinematográfica.', image: 'assets/wedding/boda-08-pareja-bosque-editorial.webp', theme: '#1e2b27' },
   { route: 'xv', title: 'Mis XV · Sofía Isabella', description: 'Demo Enchanted Night: una invitación digital de XV años elegante y cinematográfica.', image: 'assets/xv/quince-08-night-portrait.webp', theme: '#140912' },
+  { route: 'esmeralda', title: 'Corina Esmeralda · Mis XV años', description: 'Una invitación en tonos esmeralda para celebrar los XV años de Corina Esmeralda el 31 de octubre de 2026.', image: 'assets/xv/quince-08-night-portrait.webp', theme: '#14463c' },
   { route: 'presentacion', title: 'Mi presentación · Mateo', description: 'Demo Soft Heirloom: una invitación digital familiar, delicada y cálida.', image: 'assets/presentation/presentacion-01-manos-familia-bebe.webp', theme: '#27424a' },
 ];
 

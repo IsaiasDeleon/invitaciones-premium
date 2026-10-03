@@ -36,7 +36,7 @@ export default function Home() {
         <p className="catalog-edition" aria-hidden="true">Colección · 2027</p>
       </header>
 
-      <section className="catalog-statement" id="coleccion"><span>El primer recuerdo</span><h2>No diseñamos una página para tu evento. Diseñamos la forma en que comienza.</h2><p>Tres direcciones artísticas, una experiencia impecable en el teléfono y cada detalle adaptado a tu celebración.</p></section>
+      <section className="catalog-statement" id="coleccion"><span>El primer recuerdo</span><h2>No diseñamos una página para tu evento. Diseñamos la forma en que comienza.</h2><p>Cuatro direcciones artísticas, una experiencia impecable en el teléfono y cada detalle adaptado a tu celebración.</p></section>
 
       <section className="showcase showcase-wedding">
         <figure className="showcase-wedding-main"><img src={asset('assets/wedding/boda-08-pareja-bosque-editorial.webp')} alt="Pareja de novios en un jardín de luz natural" width="1600" height="2400" loading="lazy" /></figure>
@@ -52,9 +52,16 @@ export default function Home() {
         <div className="showcase-xv-photos"><figure><img src={asset('assets/xv/quince-08-night-portrait.webp')} alt="Joven con vestido de gala bajo las luces de la ciudad" width="1800" height="2696" loading="lazy" /></figure><figure><img src={asset('assets/xv/quince-04-flores-luces-colgantes.webp')} alt="Flores rosas y luces cálidas" width="1600" height="2246" loading="lazy" /></figure><span aria-hidden="true">XV</span></div>
       </section>
 
+      <section className="showcase showcase-esmeralda">
+        <figure className="showcase-esmeralda-photo"><img src={asset('assets/xv/quince-08-night-portrait.webp')} alt="Retrato editorial de inspiración para la plantilla Esmeralda" width="1800" height="2696" loading="lazy" /></figure>
+        <div className="showcase-index"><span>03</span><p>XV años · Esmeralda</p></div>
+        <div className="showcase-copy"><p>Una celebración en verde esmeralda</p><h2>Corina<br /><em>Esmeralda</em></h2><span>Una historia delicada entre verdes profundos, retratos de inspiración y una línea del tiempo diseñada para recorrer cada momento.</span><div className="showcase-includes">Apertura <i>·</i> Itinerario <i>·</i> Galería <i>·</i> RSVP</div><a href="./esmeralda">Explorar invitación <ArrowUpRight aria-hidden="true" /></a></div>
+        <div className="showcase-esmeralda-seal" aria-hidden="true">CE<br /><i>31 · 10 · 26</i></div>
+      </section>
+
       <section className="showcase showcase-presentation">
         <figure className="showcase-presentation-bg"><img src={asset('assets/presentation/presentacion-07-primeros-pasos-familia.webp')} alt="Familia acompañando los primeros pasos de un bebé" width="1600" height="2400" loading="lazy" /></figure>
-        <div className="showcase-index"><span>03</span><p>Presentación · Soft Heirloom</p></div>
+        <div className="showcase-index"><span>04</span><p>Presentación · Soft Heirloom</p></div>
         <div className="showcase-copy"><p>Un álbum familiar</p><h2>Mateo</h2><span>Papel, luz natural y pequeños gestos. Una invitación íntima con la calidez de un recuerdo que se pasa de generación en generación.</span><div className="showcase-includes">Álbum <i>·</i> Calendario <i>·</i> Familia <i>·</i> RSVP</div><a href="./presentacion">Explorar invitación <ArrowUpRight aria-hidden="true" /></a></div>
         <figure className="showcase-presentation-card"><span>con mucha alegría</span><img src={asset('assets/presentation/presentacion-01-manos-familia-bebe.webp')} alt="Manos de una familia sosteniendo la mano de un bebé" width="1600" height="1063" loading="lazy" /><small>La presentación de Mateo</small></figure>
       </section>
